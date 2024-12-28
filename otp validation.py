@@ -13,14 +13,14 @@ subject = "OTP For Verification"
 body = f"Hello {name} !\nDate of Birth : {date} - {months[month]}\nYour Secret OTP is {otp}"
 
 msg = MIMEMultipart()
-msg['From'] = "saivardhan@codegnan.com"
+msg['From'] = "paidipalliganesh25@gmail.com"
 msg['To'] = tomail
 msg['Subject'] = subject
 msg.attach(MIMEText(body,'plain'))
 
 server = smtplib.SMTP("smtp.gmail.com",587)
 server.starttls()
-server.login("saivardhan@codegnan.com","yyzz guyc uejz rbod")
+server.login("paidipalliganesh25@gmail.com","qaox phqy ixlz ozew")
 server.send_message(msg)
 server.quit()
 
